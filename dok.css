@@ -1,0 +1,13 @@
+.bor {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+
+.mor{
+    color: blue;
+}
+
+body {
+    background-color: red;
+}

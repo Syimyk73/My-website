@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красочный сайт с анимациями и описаниями</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .main-content {
+            display: flex;
+            flex: 1; /* чтобы занимать всю доступную высоту */
+            justify-content: center;
+            align-items: center;
+        }
+        .cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 1rem;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            color: #333;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto; /* футер всегда внизу */
+            width: 100%;
+        }
+        .tabs {
+            display: flex;
+            justify-content: flex-start;
+            background-color: #333;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .tabs a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            transition: background-color 0.3s;
+        }
+        .tabs a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в культуру разных стран!</h1>
+    </header>
+    <div class="main-content">
+        <div class="cards-wrapper">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/2/2f/Burj_Khalifa_building.jpg/220px-Burj_Khalifa_building.jpg" alt="Изображение карточки 1">
+                <h2>Карточка 1</h2>
+                <p>Самое высокое здание в мире!</p>
+            </div>
+            <div class="card">
+                <img src="https://kulturologia.ru/files/u29141/2914117418.png" alt="Изображение карточки 2">
+                <h2>Карточка 2</h2>
+                <p>Это эйфелевая башня известная во всем мире достопримечательность Парижа!</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvqJyny83e1S-sz4RJYyPGY2AKxOAH0mvF4w&s" alt="Изображение карточки 3">
+                <h2>Карточка 3</h2>
+                <p>Всем известные пирамиды!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Культура разных стран. Все права защищены.</p>
+    </footer>
+    <div class="tabs">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </div>
+</body>
+</html>
